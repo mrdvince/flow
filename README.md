@@ -1,5 +1,15 @@
 # flow
 
+<p align="center">
+  <img src="images/stacked.gif" alt="animated" />
+</p>
+
+## Intro
+
+Was just scrolling through PyTorch docs and stumbled upon optical flow, figured I should try it out.
+
+Video used is from blender see acknowledgements below
+
 ## Getting started
 
 ## Dependencies
@@ -25,9 +35,17 @@ git clone https://github.com/mrdvince/flow.git
 cd flow
 pip install -r requirements.txt
 ```
-3. Run the thing/generate you own video
+3. Run the thing
+Incase your run out of memory try setting `to` a smaller number, 
+
+i.e  e.g to=30 generates up to the 30th second of the clip
 ```
-python flow.py --video <video source> --to <time in seconds>
+python flow.py --video <video source> --to <time in seconds you want the video to stop at>
 ```
-Do not running this on cuda will be much faster and using the M1 gpu doesn't work currently due to missing ops.
-Also keeping the to 
+Do note, running this on cuda will be much faster and using the M1 gpu doesn't work currently due to missing ops.
+
+
+## Acknowledgements
+
+- [Coffe run blender video](https://studio.blender.org/films/coffee-run/)
+- [Optical flow post on pytorch docs](https://pytorch.org/vision/stable/auto_examples/plot_optical_flow.html#sphx-glr-auto-examples-plot-optical-flow-py)
