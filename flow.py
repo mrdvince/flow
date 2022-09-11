@@ -10,7 +10,7 @@ from torchvision.utils import flow_to_image
 from stitch import write_video
 
 
-def runner(video, to, ss=0, filename="dummy.mp4"):
+def runner(video, to=None, ss=0, filename="dummy.mp4"):
     video = Path(video)
     vframes, aframes, metadata = torchvision.io.read_video(
         str(video), pts_unit="sec", output_format="TCHW", start_pts=ss, end_pts=to
