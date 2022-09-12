@@ -48,4 +48,3 @@ if __name__ == "__main__":
     # device = "mps" if torch.backends.mps.is_available() else "cpu"
     device = "cpu"
     fire.Fire(runner)
-# ffmpeg -i right.mp4 -vf "fps=24,scale=960:520:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" right.gif
