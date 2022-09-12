@@ -3,6 +3,8 @@
 <p align="center">
   <img src="images/stacked.gif" alt="animated" />
 </p>
+> The GIF is pretty large, might take a minute to load here on Github. Give it a few.
+You can also check out the video in the images folder (clip.mp4)
 
 ## Intro
 
